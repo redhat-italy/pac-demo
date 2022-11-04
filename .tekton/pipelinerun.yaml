@@ -61,7 +61,7 @@ spec:
            workspace: workspace
         params:
          - name: url
-           value: https://github.com/gamagnolo/food-app
+           value: https://github.com/redhat-italy/food-app
          - name: revision
            value: main
          - name: depth
@@ -211,7 +211,7 @@ spec:
           kind: ClusterTask
         params:
         - name: GIT_REPOSITORY
-          value: https://github.com/gamagnolo/food-app-config
+          value: https://github.com/redhat-italy/food-app-config
         - name: rox_api_token
           value: roxsecrets
         - name: rox_central_endpoint
@@ -233,7 +233,7 @@ spec:
           name: git-update-deployment
         params:
         - name: GIT_REPOSITORY
-          value: https://github.com/gamagnolo/food-app-config
+          value: https://github.com/redhat-italy/food-app-config
         - name: CURRENT_IMAGE
           value: demo-registry-quay-quay-demo.apps.ocp4hub.sandbox963.opentlc.com/$(context.pipelineRun.namespace)/old-food-app
         - name: NEW_IMAGE
@@ -271,7 +271,7 @@ spec:
           name: git-update-deployment
         params:
         - name: GIT_REPOSITORY
-          value: https://github.com/gamagnolo/food-app-config
+          value: https://github.com/redhat-italy/food-app-config
         - name: CURRENT_IMAGE
           value: demo-registry-quay-quay-demo.apps.ocp4hub.sandbox963.opentlc.com/$(context.pipelineRun.namespace)/old-food-app
         - name: NEW_IMAGE
@@ -309,7 +309,7 @@ spec:
         - wait-application-stage
         params:
         - name: url
-          value: https://github.com/gamagnolo/food-app-gatling
+          value: https://github.com/redhat-italy/food-app-gatling
         - name: subdirectory
           value: food-app-gatling
         - name: deleteExisting
